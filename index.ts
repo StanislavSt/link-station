@@ -23,8 +23,7 @@ const stations: Station[] = [
 
 const getDistanceBetweenPoints = (point1: Point, point2: Point) => {
   return Math.sqrt(
-    Math.pow(Math.abs(point1[0] - point2[0]), 2) +
-      Math.pow(Math.abs(point1[1] - point2[1]), 2)
+    Math.pow(point1[0] - point2[0], 2) + Math.pow(point1[1] - point2[1], 2)
   );
 };
 
