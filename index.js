@@ -14,8 +14,7 @@ var stations = [
     [10, 0, 12],
 ];
 var getDistanceBetweenPoints = function (point1, point2) {
-    return Math.sqrt(Math.pow(Math.abs(point1[0] - point2[0]), 2) +
-        Math.pow(Math.abs(point1[1] - point2[1]), 2));
+    return Math.sqrt(Math.pow(point1[0] - point2[0], 2) + Math.pow(point1[1] - point2[1], 2));
 };
 var getStationPower = function (reach, distance) {
     if (distance > reach)
