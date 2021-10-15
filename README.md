@@ -9,8 +9,8 @@ how to access a deployed running version.
 
 This problem can be solved in 2-dimensional space. Link stations have reach and power.
 
-A link station’s power can be calculated:
-**power = (reach - device's distance from linkstation)^2**
+A link station’s power can be calculated:</br>
+**power = (reach - device's distance from linkstation)^2**</br>
 **if distance > reach, power = 0**
 
 Program should output following line:</br>
@@ -25,3 +25,15 @@ or:</br>
 
 Print out function output from points​ (x, y):</br>
 (0,0), (100, 100), (15,10) and (18, 18).
+
+## How to run
+The solution is written in typescript, inside **index.ts**.
+
+If you have `ts-node` installed globally, you can run:</br>
+`ts-node index.ts`
+
+If you don't have `ts-node` installed you can run:</br>
+`npx ts-node index.ts`
+
+If you don't want to install or use `ts-node`, I have provided a compiled javascript file:</br>
+`node index.js`
